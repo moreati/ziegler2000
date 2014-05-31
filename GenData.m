@@ -40,12 +40,6 @@ G = oct2gen([40;14;34;60; 04;64;20;70; 34;00;60;64])
 %[m,c,WordCount]   = BlockEnc('Hamming3',1000,1000,n,k,q,G,1);
 %[m,c,WordCount]   = BlockEnc('Hamming4',1000,100,n,k,q,G,1);
 %[m,c,WordCount]   = BlockEnc('Golay23-1',1000,100,n,k,q,G,1);
-
-                                    146
-
-
-
-
 %[m,c,WordCount] = BlockEnc('Golay23-2',1000,100,n,k,q,G,1);
 %[m,c,WordCount] = BlockEnc('crc7-4-1',1000,1,n,k,q,G,1);
 %[m,c,WordCount] = BlockEnc('bch63-45-3',1000,10,n,k,q,G,1);

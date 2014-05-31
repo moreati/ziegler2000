@@ -37,12 +37,6 @@ int *symbols,*pSymbols;         // GF(q^m) symbols
 #else
 // DEBUG C CODE
 int x[7] = {1,1,0,0,1,0,0};
-
-                                                  121
-
-
-
-
 int vectors[8] = {0,1,2,4,3,6,7,5};
 int symbols[8] = {0,1,2,4,3,7,5,6};
 #endif
