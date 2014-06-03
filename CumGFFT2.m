@@ -10,6 +10,3 @@ for i=1:WordCount
    Xcum = bitor(Xcum,X(i,:));
 end
 
-
-
-

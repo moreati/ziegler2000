@@ -34,10 +34,6 @@ for mi=1:length(m)
       if BitsPerSym > 1
          EncodedBitCount = n(ni)*WordCount*BitsPerSym;
          r2 = reshape(r(1:EncodedBitCount),BitsPerSym,...
-
-
-
-
                        EncodedBitCount/BitsPerSym)';
         r2 = bits2sym(r2,BitsPerSym,EncodedBitCount/BitsPerSym);
         r2 = reshape(r2,n(ni),WordCount)';
@@ -94,10 +90,6 @@ if length(n2) > 0
         m = 15;
      otherwise,
         %return
-
-
-
-
   end
 
 else
@@ -154,10 +146,6 @@ for mi=1:length(m)
         break
      end
   end      % if rem(qm1,q-1)<1
-
-
-
-
 end        % for mi=1:length(m)
 
 fclose(CodedFile);

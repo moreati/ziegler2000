@@ -16,6 +16,3 @@ fid = fopen(s,'r');
 symbols = fread(fid,qm,size);
 fclose(fid);
 
-
-
-

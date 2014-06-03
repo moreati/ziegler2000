@@ -15,10 +15,6 @@ c = zeros(WordCount,n);       % output code words
 
 if FileIO
    s = sprintf('%s.src',FileName)
-
-
-
-
    SourceFile = fopen(s,'w');
    s = sprintf('%s.fec',FileName)
    CodedFile = fopen(s,'w');
@@ -69,6 +65,4 @@ if FileIO
 else
    WordsWritten = 0;
 end
-
-
 

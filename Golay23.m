@@ -18,6 +18,3 @@ for i=1:k
    G(i,:) = [zeros(1,i-1) g zeros(1,n-k-i+1)];   % generator matrix
 end
 
-
-
-

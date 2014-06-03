@@ -19,10 +19,6 @@ global   symbols1K_m1;
 global   vectors2K_m1;
 global   symbols2K_m1;
 global   vectors4K_m1;
-
-
-
-
 global   symbols4K_m1;
 global   vectors16K_m1;
 global   symbols16K_m1;
@@ -59,7 +55,4 @@ global   symbols1M_m1;
 [vectors64K_m1,symbols64K_m1] = GenGFx(65536,45);
 [vectors256K_m1,symbols256K_m1] = GenGFx(262144,39);
 [vectors1M_m1,symbols1M_m1] = GenGFx(1048576,83);
-
-
-
 

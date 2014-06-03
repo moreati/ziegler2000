@@ -6,6 +6,3 @@ for i=2:length(x)
    z = bitxor(z,x(i));
 end
 
-
-
-

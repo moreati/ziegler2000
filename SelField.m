@@ -21,10 +21,6 @@ global   symbols1K_m1;
 global   vectors2K_m1;
 global   symbols2K_m1;
 global   vectors2K_m2;
-
-
-
-
 global   symbols2K_m2;
 global   vectors4K_m1;
 global   symbols4K_m1;
@@ -81,10 +77,6 @@ switch qm
          vectors = vectors2K_m1;
          symbols = symbols2K_m1;
       else
-
-
-
-
          vectors = vectors2K_m2;
          symbols = symbols2K_m2;
       end
@@ -112,7 +104,4 @@ switch qm
       % HAVE NO VALID LENGTHS n, AND THEREFORE ARE NOT REQUIRED!
       % (e.g., 8K, 128K, 512K)
 end
-
-
-
 

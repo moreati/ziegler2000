@@ -27,6 +27,3 @@ end
 ConsecRoots = [ConsecRoots:ConsecRoots+DiffCount];
 t = length(ConsecRoots)/2;
 
-
-
-

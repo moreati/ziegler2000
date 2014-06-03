@@ -15,10 +15,6 @@ global   symbols256_m1;
 global   vectors512_m1;
 global   symbols512_m1;
 global   vectors1K_m1;
-
-
-
-
 global   symbols1K_m1;
 global   vectors2K_m1;
 global   symbols2K_m1;

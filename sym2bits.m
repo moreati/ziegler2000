@@ -13,6 +13,3 @@ else
    bits = de2bi(symbols);
 end
 
-
-
-

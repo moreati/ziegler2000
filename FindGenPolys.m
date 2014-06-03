@@ -12,10 +12,6 @@ CodedFile = fopen(s,'r');
 [r,WordsRead] = fread(CodedFile,EncodedBitCount,'ubit1');
 if(WordsRead ~= EncodedBitCount)
    disp 'Error reading file'
-
-
-
-
    WordsRead
 end
 
@@ -27,10 +23,8 @@ PermLUT = perms(1:n);         % table of index permutations for gi(x)
 comb = 2^(n*K)          % # of tap combinations across all polynomials
 MaxComb = 1e6;          % maximum # of tap combinations to search
 
-
 % Search based on best known polynomials first
 if n==2
-
     switch K
        case 3,
           G = oct2gen([5;7]);
@@ -72,10 +66,6 @@ if n==2
        S = S(1:WordCount);
        if sum(S)==0
           fprintf('Found generators at trial %d:\n',i)
-
-
-
-
           G2 = oct2gen([a2;a1],[1,n,K-1])
           break
        end
@@ -114,7 +104,6 @@ if n==2
     end
 
 elseif n==3
-
     switch K
        case 3,
           G = oct2gen([5;7;7]);
@@ -192,10 +181,6 @@ elseif n==3
              a2 = gfconv(g1,g3);
              a3 = gfconv(g1,g2);
              P1 = gfconv(a1,r2(1,:));
-
-
-
-
              P1 = [P1 zeros(1,N-length(P1))];
              P2 = gfconv(a2,r2(2,:));
              P2 = [P2 zeros(1,N-length(P2))];
@@ -312,10 +297,6 @@ if (sum(S)~=0) & (comb<MaxComb)
          P2 = [P2 zeros(1,N-length(P2))];
          P3 = gfconv(a3,r2(3,:));
          P3 = [P3 zeros(1,N-length(P3))];
-
-
-
-
             P4 = gfconv(a4,r2(4,:));
             P4 = [P4 zeros(1,N-length(P4))];
             S = mod(P1+P2+P3+P4,4);

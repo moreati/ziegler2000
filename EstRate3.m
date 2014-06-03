@@ -30,10 +30,6 @@ for n = nmin:nmax
       InputLenEst = k;
       AlphabetSizeEst = 2;
       if(rate<1)
-
-
-
-
          fprintf('Code rate estimate: %d/%d = %f\n',k,n,RateEst)
       end
    end
@@ -91,14 +87,8 @@ for BitsPerSym = 2:lmax
    end
 end
 
-
-
-
 if RateEst==1
    disp 'INPUT IS NOT CODED'
    return
 end
-
-
-
 

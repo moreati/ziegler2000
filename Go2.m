@@ -96,10 +96,6 @@ if length(ExtRoots)>0
    disp 'Found cyclic block code'
 
   % Convert roots to base field by multiplying by (q^m-1)/n
-
-
-
-
 ExtRoots = ExtRoots-1;
 BaseRoots = ExtRoots*(ExtFieldEst-1)/CWLenEst
 
@@ -156,10 +152,6 @@ else
            dbcont   % exit
         end
      elseif CWLenEst == ExtFieldEst-1
-
-
-
-
            if t == 1
               CodeType = 'binary Hamming'
            else

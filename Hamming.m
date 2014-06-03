@@ -1,10 +1,6 @@
 function [n,k,M,G,H] = Hamming(m)
 
 % Hamming code w/ parameters m>=2, t=1
-
-
-
-
 %   Ex: m=3 -> (7,4) code
 n   = 2^m-1;
 k   = n-m;
@@ -30,7 +26,4 @@ for i=1:k
 end
 G = [P eye(k)];            % generator matrix
 H = [eye(n-k) P'];         % parity check matrix
-
-
-
 

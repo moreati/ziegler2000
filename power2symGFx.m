@@ -4,6 +4,3 @@ function [y] = power2symGFx(x)
 % to symbols {0,1,2=alpha,3=alpha^2,...}
 y = log2(2.^(x+1) + (x<0));
 
-
-
-

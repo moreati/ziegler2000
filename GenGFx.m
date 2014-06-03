@@ -3,10 +3,6 @@ function [vectors,symbols] = GenGFx(qm,mx)
 % Generate a Galois Field GF(q^m) based on a minimal polynomial m(x).
 % Note that mx is provided as a binary number, not an array;
 % also, mx is provided as the actual polynomial minus the x^(q^m) term,
-
-
-
-
 %   since   alpha^(q^m) = mx,     m(x) = mx + x^(q^m)
 
 vectors = zeros(qm,1);
@@ -34,7 +30,4 @@ fid = fopen(s,'w')
 %fprintf(fid,'%d',symbols);
 fwrite(fid,symbols,size)
 fclose(fid)
-
-
-
 

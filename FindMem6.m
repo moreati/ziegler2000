@@ -4,10 +4,6 @@ function [ConvCWLenEst,InputLenEst,ConstraintLenEst] = ...
 % RREF TECHNIQUE IN GF(2) ADAPTED TO CONVOLUTIONAL CODES
 
 % Increase max memory length to ensure valid test up to Kmax;
-
-
-
-
 % this avoids false detection of block codes
 margin = 4;
 Kmax = Kmax+margin;
@@ -16,7 +12,6 @@ ConvCWLenEst = 0;
 ConstraintLenEst = 0;
 compr = ones(nmax,Kmax);
 ConsecCompr = 0;
-
 
 for n=2:nmax
    n
@@ -65,9 +60,6 @@ for n=2:nmax
                  delta2 = %d\n',kK,nK,rate,n,K,delta,delta2)
         FirstCompr = 1;
 
-
-
-
          if (rate < PrevRate) & (K == PrevK+1)
             PrevRate = rate;
             PrevK = K;
@@ -106,9 +98,6 @@ for n=2:nmax
 
 end
 
-
-
-
 % Repeat search for K if k > 1, given (n,k) and appropriate threshold,
 % to revise estimate of constraint length
 if (ConvCWLenEst > 0) & (InputLenEst > 1)
@@ -124,10 +113,6 @@ if (ConvCWLenEst > 0) & (InputLenEst > 1)
          disp 'Error reading file'
          WordsRead
       end
-
-
-
-
       r2 = reshape(r,nK,WordCount)';
       [G2,kK] = RrefGF2c(r2);    % MEX C-code implementation
       rate = kK/nK;
@@ -144,14 +129,12 @@ if (ConvCWLenEst > 0) & (InputLenEst > 1)
    end
 end
 
-
 if (ConvCWLenEst > 0) & (ConstraintLenEst > 0)
    fprintf('Found convolutional code: n = %d, k = %d, K = %d\n', ...
             ConvCWLenEst,InputLenEst,ConstraintLenEst)
 else
    disp 'CONVOLUTIONAL CODE NOT FOUND'
 end
-
 
 if 0
 figure
@@ -164,5 +147,4 @@ xlabel('Constraint Length (K)')
 ylabel('RREF Compression')
 legend('Rate 1/2','Rate 1/3','Rate 1/4',0)
 end
-
 

@@ -3,10 +3,6 @@ function [m,c,WordsWritten] = ...
 
 R = k/n;                        % rate
 WordsWritten = 0;
-
-
-
-
 SourceBitCount = k*WordCount;
 EncodedBitCount = n*(WordCount+K-1);
 m = zeros(WordCount,k);       % input message words
@@ -46,3 +42,4 @@ if FileIO
 else
    WordsWritten = 0;
 end
+

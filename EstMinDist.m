@@ -26,6 +26,3 @@ end
 
 dmin = min(min(d));
 
-
-
-

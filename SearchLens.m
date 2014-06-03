@@ -5,6 +5,3 @@ n   =   find(~r);
 i   =   find(n>nmin);
 n   =   n(i);
 
-
-
-

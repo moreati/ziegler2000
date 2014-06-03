@@ -6,6 +6,3 @@ for i=0:t
 end
 redundancy = log2(Vq)/log2(q);      % logq(Vq(n,t))
 
-
-
-

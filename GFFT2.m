@@ -41,16 +41,10 @@ else
            else
               a(i+1) = 0;
            end
-
-
-
-
          end
          Xij = SumGFx(a);
          X(l,j+1) = symbols(Xij+1);
       end
    end
 end
-
-
 
