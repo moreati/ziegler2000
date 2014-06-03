@@ -56,8 +56,8 @@ for n=2:nmax
      end
 
      if rate < 1
-        fprintf('Rate = %d/%d = %f, n = %d, K = %d, delta = %d, ...
-                 delta2 = %d\n',kK,nK,rate,n,K,delta,delta2)
+        fprintf('Rate = %d/%d = %f, n = %d, K = %d, delta = %d, delta2 = %d\n',
+                kK,nK,rate,n,K,delta,delta2)
         FirstCompr = 1;
 
          if (rate < PrevRate) & (K == PrevK+1)
@@ -69,8 +69,8 @@ for n=2:nmax
                InputLenEst = k
                % Set K at first rate to drop below the threshold
                ConstraintLenEst = ((K-1)/k)+1;
-               fprintf('(Rate = %f) < (threshold = %f) at ...
-                        K = %d\n',rate,TH,K)
+               fprintf('(Rate = %f) < (threshold = %f) at  K = %d\n',
+                       rate,TH,K)
             end
          else
             % Invalidate this trial since its rate is not
@@ -120,8 +120,8 @@ if (ConvCWLenEst > 0) & (InputLenEst > 1)
       if (rate < TH)
          % Set K at first rate to drop below the threshold
          ConstraintLenEst = ((K-1)/k)+1;
-         fprintf('(Rate = %f) < (threshold = %f) at K2 = %d; ...
-                  K = %d\n',rate,TH,K,ConstraintLenEst)
+         fprintf('(Rate = %f) < (threshold = %f) at K2 = %d; K = %d\n',
+                 rate,TH,K,ConstraintLenEst)
          fclose(CodedFile);
          break
       end
